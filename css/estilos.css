@@ -109,11 +109,11 @@ label{
     font-size: 15px;
     margin: 10px 0;
 }
-/*MAPA*/
+/*MAPA
 .mapa {
     width: 100%;
     max-width: 600px;
-}
+}*/
 
 /*FOOTER*/
 footer {
@@ -122,8 +122,37 @@ footer {
     text-align: center;
     padding: 20px;
 }
-footer img{
-    width: 20px;
-    vertical-align: middle;
-    margin-right: 8px;
+.footer-map iframe {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    border-radius: 12px;
+    border: none;
 }
+.footer-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.footer-map .direccion {
+    color: white;
+    font-size: 14px;
+}
+.footer-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+.footer-redes img{
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.footer-redes img:hover {
+    transform: scale(1.2);
+}
+
